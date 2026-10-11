@@ -29,14 +29,68 @@
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="container">
         <h2 id="about-title" class="section__title">About Me</h2>
-        <!-- ABOUT ME CONTENT GOES HERE (Stage 5) -->
+        <div class="about">
+          <div class="about__frame">
+            <img class="about__photo" src="assets/portrait.jpg" width="960" height="1280" alt="Portrait of Zarina Shynbolatova, wearing glasses and a dark jacket">
+          </div>
+          <div class="about__text">
+            <p class="lead">Hi, I'm Zarina, from Uralsk, Kazakhstan</p>
+            <p>I'm a student at KBTU, currently studying on major "IT Management" at 3rd year</p>
+            <p>Now I'm studying web development and improving my skiils</p>
+            <p>I'm open to new projects and to meet new people, so don't be shy to write to me, the form is below🥰</p>
+            <p id="tools-label" class="about__label">Tools I have used so far</p>
+            <ul class="chips" aria-labelledby="tools-label">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>React Router</li>
+              <li>Vite</li>
+              <li>Vitest</li>
+              <li>Git and GitHub</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section section--alt" aria-labelledby="projects-title">
       <div class="container">
         <h2 id="projects-title" class="section__title">Projects</h2>
-        <!-- PROJECTS GO HERE (Stage 6) -->
+        <div class="projects">
+          <article class="card">
+            <p class="card__tag">Week 4</p>
+            <h3>Multi-page profile app</h3>
+            <p>A React and TypeScript app split into Home, Skills, Contact and 404 pages inside one shared layout. The like count lives in React Context, so it survives navigation, and a Vitest test checks the like button.</p>
+            <p class="card__meta">React · TypeScript · React Router · Vitest</p>
+            <div class="card__links">
+              <a class="btn btn--primary" href="https://shynbolatovazarina.github.io/iwamad-practice/" target="_blank" rel="noopener">Live app<span class="visually-hidden"> of the Week 4 project (opens in a new tab)</span></a>
+              <a class="btn btn--ghost" href="https://github.com/ShynbolatovaZarina/iwamad-practice/tree/week-04" target="_blank" rel="noopener">Source code<span class="visually-hidden"> of the Week 4 project (opens in a new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="card__tag">Week 3</p>
+            <h3>Profile card in React and TypeScript</h3>
+            <p>My profile card rebuilt as React components with typed props. The like button uses useState, and the skills are a typed list rendered with .map(), stable keys and a message for the empty state.</p>
+            <p class="card__meta">React · TypeScript · Vite</p>
+            <div class="card__links">
+              <a class="btn btn--primary" href="https://github.com/ShynbolatovaZarina/iwamad-practice/tree/week-03" target="_blank" rel="noopener">Source code<span class="visually-hidden"> of the Week 3 project (opens in a new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="card__tag">Week 2</p>
+            <h3>Responsive profile card</h3>
+            <p>A profile card built with semantic HTML5, the CSS box model and Flexbox. It rearranges between phone and desktop widths, and a like button written in vanilla JavaScript toggles its state. I restyled it with Tailwind CSS and moved it into a Vite development environment.</p>
+            <p class="card__meta">HTML5 · CSS3 · JavaScript · Tailwind CSS · Vite</p>
+            <div class="card__links">
+              <a class="btn btn--primary" href="https://github.com/ShynbolatovaZarina/iwamad-practice/tree/week-02" target="_blank" rel="noopener">Source code<span class="visually-hidden"> of the Week 2 project (opens in a new tab)</span></a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
