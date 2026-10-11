@@ -486,3 +486,25 @@ html[data-theme="dark"] {
   border-radius: var(--radius);
   color: var(--success);
 }
+
+
+
+/* Phone decision after testing at 375px: the two-row header covered about a sixth of the screen,
+   so it only stays fixed from 768px up. */
+.site-header {
+  position: static;
+}
+
+:root {
+  --header-offset: var(--space-2);
+}
+
+@media (min-width: 48rem) {
+  .site-header {
+    position: sticky;
+  }
+
+  :root {
+    --header-offset: 6rem;
+  }
+}
