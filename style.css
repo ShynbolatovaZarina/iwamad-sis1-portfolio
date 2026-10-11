@@ -384,3 +384,53 @@ a:hover {
   color: var(--muted);
   font-size: var(--fs-sm);
 }
+
+
+
+
+
+@media (min-width: 48rem) {
+  :root {
+    --header-offset: 6rem;
+  }
+
+  .site-header__inner {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "brand nav toggle";
+    gap: var(--space-3);
+  }
+
+  .site-nav__list {
+    justify-content: flex-end;
+  }
+
+  .site-nav__list li {
+    flex: 0 0 auto;
+  }
+
+  .about {
+    grid-template-columns: 16rem 1fr;
+    align-items: start;
+    gap: var(--space-5);
+  }
+
+  .about__frame {
+    width: 16rem;
+  }
+}
+
+
+@media (min-width: 64rem) {
+  .section {
+    padding-block: var(--space-6);
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact {
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-5);
+  }
+}
