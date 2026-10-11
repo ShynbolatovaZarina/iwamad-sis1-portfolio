@@ -434,3 +434,55 @@ a:hover {
     gap: var(--space-5);
   }
 }
+
+
+
+
+html[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #111a2e;
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #263248;
+  --accent: #a5b4fc;
+  --accent-fg: #0b1220;
+  --accent-soft: #1b2745;
+  --danger: #fca5a5;
+  --success: #6ee7b7;
+  color-scheme: dark;
+}
+
+
+
+.field-error {
+  color: var(--danger);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+.field [aria-invalid="true"] {
+  border-color: var(--danger);
+}
+
+.form-status {
+  font-weight: 600;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status--error {
+  color: var(--danger);
+}
+
+.form-status--success {
+  padding: var(--space-2);
+  border: 2px solid var(--success);
+  border-radius: var(--radius);
+  color: var(--success);
+}
